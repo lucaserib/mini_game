@@ -6,8 +6,8 @@ player_wins = 0
 machine_wins = 0
 
 def Player_option():
-   players_choice = input('Escolha entre: Pedra, Papel ou Tesoura')
-   players_choice.lower()
+   players_choice = input('Escolha entre: Pedra, Papel ou Tesoura: ')
+   players_choice = players_choice.lower()
    if players_choice == 'pedra':
        return players_choice
    elif players_choice == 'papel':
@@ -47,9 +47,9 @@ while True:
     print('-'*30)
     
 
-    players_choice = input("Você quer jogar novamente?")
+    players_choice = input("Você quer jogar novamente? ")
     if players_choice in ["SIM","Sim","sim",'s','S']:
-        pass
+        continue
     if players_choice in ['NAO', 'nao', 'Nao','n', 'N']:
         break
     else:
