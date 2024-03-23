@@ -32,6 +32,12 @@ while True:
         or (players_choice == 'papel') and (machine_choice == 'pedra')\
             or (players_choice == 'tesoura') and (machine_choice == 'papel'):
         print(f'Jogador escolheu {players_choice} e a Máquina escolheu {machine_choice} Resultado: Você ganhou')
+        player_wins += 1
+    elif players_choice == machine_choice:
+        print(f'Jogador escolheu {players_choice} e a Máquina escolheu {machine_choice} Resultado: Empate')
+    else:
+        print(f'Jogador escolheu {players_choice} e a Máquina escolheu {machine_choice} Resultado: Você perdeu')
+        machine_wins += 1
 
 
 
